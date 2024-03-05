@@ -33,10 +33,10 @@ def max_2_sum arr
     end
     elsif n<max1 && n>max2
       max2=n
-    end
     sum = max1+max2
     return sum
     end
+  end
 end
 
 def sum_to_n? arr, n
