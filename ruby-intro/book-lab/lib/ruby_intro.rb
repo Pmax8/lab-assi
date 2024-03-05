@@ -12,6 +12,7 @@ def sum arr
   else 
     arr.each do |n|
     sum += n
+    end
 end
 
 def max_2_sum arr
@@ -26,9 +27,11 @@ def max_2_sum arr
     arr.each do |n|
     if n>max1 
       max1=n
+    end
     elsif n<max1 && n>max2
       max2=n
     return max1+max2
+    end
 end
 
 def sum_to_n? arr, n
@@ -39,7 +42,7 @@ def sum_to_n? arr, n
     return false
   else 
     arr.each do |n|
-    
+    end
 end
 
 # Part 2
