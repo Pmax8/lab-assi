@@ -7,12 +7,14 @@ def sum arr
   #Run associated tests via:  `$ rspec -e '#sum ' spec/part1_spec.rb`
   # YOUR CODE HERE
   sum = 0
-  if arr truthy
+  if arr.length == 0
     return sum
   else 
     arr.each do |n|
     sum += n
     end
+    return sum
+  end
 end
 
 def max_2_sum arr
@@ -24,13 +26,16 @@ def max_2_sum arr
   else 
     max1 = 0
     max2 = 0
+    sum = 0
     arr.each do |n|
     if n>max1 
       max1=n
     end
     elsif n<max1 && n>max2
       max2=n
-    return max1+max2
+    end
+    sum = max1+max2
+    return sum
     end
 end
 
