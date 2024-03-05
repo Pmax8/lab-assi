@@ -6,6 +6,11 @@ def sum arr
   #Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.  
   #Run associated tests via:  `$ rspec -e '#sum ' spec/part1_spec.rb`
   # YOUR CODE HERE
+  sum = 0
+  if arr truthy
+  else 
+    arr.each do |n|
+    sum += n
 end
 
 def max_2_sum arr
