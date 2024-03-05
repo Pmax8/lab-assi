@@ -8,7 +8,7 @@ def sum arr
   # YOUR CODE HERE
   sum = 0
   if arr truthy
-    return 0
+    return sum
   else 
     arr.each do |n|
     sum += n
@@ -35,7 +35,11 @@ def sum_to_n? arr, n
   #Define a method `sum_to_n?(array, n)` that takes an array of integers and an additional integer, n, as arguments and returns true if any two elements in the array of integers sum to n. `sum_to_n?([], n)` should return false for any value of n, by definition. 
   #Run associated tests via:  `$ rspec -e '#sum_to_n' spec/part1_spec.rb` 
   # YOUR CODE HERE
-  
+  if arr.lenght<=1
+    return false
+  else 
+    arr.each do |n|
+    
 end
 
 # Part 2
