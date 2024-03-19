@@ -5,10 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th><%= link_to "Title", movies_path(sort: "Title") %></th>
       <th>Rating</th>
       <th>Description</th>
-      <th>Release date</th>
+      <th><%= link_to "Release Date", movies_path(sort: "Release Date") %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
