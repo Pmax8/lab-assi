@@ -19,7 +19,18 @@
     </tr>
   </thead>
 
-  <tbody>
+<%= form_tag movies_path, method: :get, id: 'ratings_form' do %>
+  Show (all if none selected):
+  <% @all_ratings.each do |rating| %>
+    <div class="form-check  form-check-inline">
+      <%= label_tag "ratings[#{rating}]", rating, class: 'form-check-label' %>
+      <%= check_box_tag "ratings[#{rating}]", "1",  @selected_ratings.include?(rating), class: 'form-check-input' %>
+    </div>
+  <% end %>
+  <%= submit_tag 'Refresh', id: 'ratings_submit', class: 'btn btn-primary' %>
+<% end %>
+
+ <tbody>
     <% @movies.each do |movie| %>
       <tr>
         <td><%= movie.title %></td>
