@@ -23,7 +23,17 @@ class MoviesController < ApplicationController
         base = base.order(params[:sort_order])
       end
     end
+
     @movies = base.all
+
+    @all_ratings = Movie.all_ratings
+    
+    if (params[:ratings])
+      @selected_ratings = params[:ratings].keys || @all_ratings
+    else
+      @selected_ratings = @all_ratings
+    end
+    @movies = Movie.where(rating: @selected_ratings)
   end
 
   # GET /movies/1 or /movies/1.json
@@ -87,4 +97,5 @@ class MoviesController < ApplicationController
     def movie_params
       params.require(:movie).permit(:title, :rating, :description, :release_date)
     end
-end
+
+  end
