@@ -11,5 +11,5 @@ The set of steps to cover are as follows:
 * [Part 3:](Part3.md) Extend RottenPotatoes to have such authenticated users become Moviegoers.
 
 ### Prerequisites
-You can start with the RottenPotatoes instance developed for the assignment on Rails associations.
+You can start with the RottenPotatoes instance developed for the assignment on Rails associations (see realease on the repo).
 
