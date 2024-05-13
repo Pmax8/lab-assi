@@ -14,3 +14,4 @@ Teaching assistant: [Nicola Bottura](https://nicolabottura.github.io/)
 - 19/03/2024 `activerecord-practice/` ActiveRecord queries & `rails-sorted-index/` extending Index view/controller
 - 26/03/2024 `rails-session/` extending Index + session settings
 - 09/04/2024 `rails-associations/` associations
+- 07/05/2024 `rails-oauth/` authentication with OAuth
